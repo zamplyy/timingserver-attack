@@ -12,8 +12,8 @@ def testTag(tag):
     print("The Time :" + str(result) + " for tag : " + tag)
     return result
 
-delay = "100"
-delayInt = 0.100
+delay = "999"
+delayInt = 0.999
 user = "joarkarl100"
 url = "http://130.243.27.198/auth/" + delay + "/" + user + "/"
 
@@ -24,14 +24,11 @@ print("First Time with all zeros = " + str(firstTime))
 tags = ["00" for x in range(16)]
 tempTags = ["00" for x in range(16)]
 
-lastTime = testTag(buildTag(tempTags))
 prevTag = "00"
 
 for x in range(16):
     found = 0
-    #lägg in här, test om det är 00
     for i in range(0,16):
-        #lastTime = testTag(buildTag(tags))
         for j in range(0,16):
             if found == 0:
                 partOfTag = (hex(i)[2] + hex(j)[2])
@@ -42,10 +39,6 @@ for x in range(16):
                     print ("Found " + partOfTag + " as index " + str(x) + " of tag")
                     found = 1
                     tags[x] = partOfTag
-                else :
-                    prevTag = partOfTag
-                    lastTime = thisTime
-                    
 
 print("    ") 
 print("    ")        
