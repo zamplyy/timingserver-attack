@@ -30,6 +30,7 @@ url = "http://130.243.27.198/auth/" + delay + "/" + user + "/"
 averageCheckNumber = 5
 
 tags = ["00" for x in range(16)]
+#tags = ["dc", "de", "ee", "1d", "85","f0","fd","1f","32","96","56","4e","f8","ce","fe","00"]
 foundI = 0
 foundJ = 0
 
