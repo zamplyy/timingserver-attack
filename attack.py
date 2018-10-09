@@ -26,7 +26,7 @@ delay = "100"
 delayInt = 0.100
 user = "joarkarl100"
 url = "http://130.243.27.198/auth/" + delay + "/" + user + "/"
-averageCheckNumber = 60
+averageCheckNumber = 30
 
 tags = ["00" for x in range(16)]
 
